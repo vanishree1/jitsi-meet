@@ -54,6 +54,10 @@ var interfaceConfig = {
         'tileview', 'videobackgroundblur', 'download', 'help'
     ],
 
+    // Whether to show the toolbox
+
+    DISABLE_TOOLBOX: false,
+
     SETTINGS_SECTIONS: [ 'devices', 'language', 'moderator', 'profile', 'calendar' ],
 
     // Determines how the video would fit the screen. 'both' would fit the whole
