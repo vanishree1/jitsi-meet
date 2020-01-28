@@ -40,5 +40,8 @@ export function isToolboxVisible(state: Object) {
         visible
     } = state['features/toolbox'];
 
+
+    interfaceConfig.DISABLE_TOOLBOX = true;
+
     return Boolean((timeoutID || visible || alwaysVisible) && !interfaceConfig.DISABLE_TOOLBOX);
 }

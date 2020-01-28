@@ -1176,6 +1176,7 @@ export default {
         APP.store.dispatch(conferenceWillJoin(room));
         this._setLocalAudioVideoStreams(localTracks);
         this._room = room; // FIXME do not use this
+        window.postMessage('roomCreated');
 
         sendLocalParticipant(APP.store, room);
 
@@ -1279,6 +1280,8 @@ export default {
         const wasSharingScreen = this.isSharingScreen;
 
         this.isSharingScreen = newStream && newStream.videoType === 'desktop';
+
+        window.postMessage('screenSharingStatusChanged');
 
         if (wasSharingScreen !== this.isSharingScreen) {
             const details = {};

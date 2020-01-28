@@ -52,6 +52,7 @@ export function getPropertyValue(
         }
     }
 
+
     // urlParams
     if (sources.urlParams) {
         if (CONFIG_WHITELIST.indexOf(propertyName) !== -1) {

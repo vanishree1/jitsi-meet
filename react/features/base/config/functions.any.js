@@ -8,6 +8,7 @@ import INTERFACE_CONFIG_WHITELIST from './interfaceConfigWhitelist';
 import parseURLParams from './parseURLParams';
 import logger from './logger';
 
+
 // XXX The functions getRoomName and parseURLParams are split out of
 // functions.js because they are bundled in both app.bundle and
 // do_external_connect, webpack 1 does not support tree shaking, and we don't

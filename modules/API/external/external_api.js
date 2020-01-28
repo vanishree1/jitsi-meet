@@ -136,6 +136,7 @@ function parseArguments(args) {
 
     const firstArg = args[0];
 
+
     switch (typeof firstArg) {
     case 'string': // old arguments format
     case undefined: {
